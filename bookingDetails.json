@@ -1,0 +1,20 @@
+[
+  {
+    "customerName": "gk",
+    "roomId": 1,
+    "date": "28-12-2021",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "bookingId": 1,
+    "bookingStatus": "successfull"
+  },
+  {
+    "customerName": "gk",
+    "roomId": 1,
+    "date": "28-12-2021",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "bookingId": 2,
+    "bookingStatus": "successfull"
+  }
+]

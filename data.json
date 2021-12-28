@@ -1,0 +1,26 @@
+[
+  {
+    "roomId": 1,
+    "noOfSeats": 50,
+    "aminities": ["AC", "TV"],
+    "pricePerHour": "500"
+  },
+  {
+    "roomId": 2,
+    "noOfSeats": 50,
+    "aminities": ["AC", "TV"],
+    "pricePerHour": "500"
+  },
+  {
+    "roomId": 3,
+    "noOfSeats": 50,
+    "aminities": ["AC", "TV"],
+    "pricePerHour": "500"
+  },
+  {
+    "noOfSeats": 50,
+    "aminities": ["AC", "TV"],
+    "pricePerHour": "500",
+    "roomId": 4
+  }
+]
