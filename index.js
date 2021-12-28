@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 9000;
 app.use(express.json())
 
 app.get("/",async(req,resp) => {
-    resp.send("hello world")
+    fs.readFile("./sampleDetails.txt","utf-8",function(err,content){
+       resp.send(content)
+    })
 })
 
 app.get("/getRooms",async(req,resp) => {
@@ -24,7 +26,7 @@ app.post("/createRoom",async(req,resp) => {
     console.log(body)
     fs.readFile("./data.json","utf-8",function(err,content){
         let currentContent = JSON.parse(content);
-        body = {...body,"id" : currentContent.length+1}
+        body = {...body,"roomId" : currentContent.length+1}
         currentContent.push(body)
          fs.writeFile("./data.json",JSON.stringify(currentContent),function(err,contenWritten){
             resp.send({message:"Room created successfully"});

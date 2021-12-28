@@ -1,0 +1,23 @@
+POST : http://localhost:9000/createRoom
+body : {
+   "noOfSeats" : 50,
+   "aminities" : ["AC","TV"],
+   "pricePerHour" : "500"
+
+}
+POST : http://localhost:9000/bookRoom
+body : {
+    "customerName" : "gk",
+    "roomId" : 1,
+    "date" : "28-12-2021",
+    "startTime" : "14:00",
+    "endTime" : "16:00"
+}
+
+GET : http://localhost:9000/getBookingDetails
+
+GET : http://localhost:9000//getCustomerBookingDetails
+
+GET : http://localhost:9000//getRooms
+
+
